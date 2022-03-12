@@ -4,7 +4,13 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
-
+ body {
+	background-image: url('../../../../../assets/images/cbdcdba2c3d2a70b362554a6b4fd749a.jpeg');
+//   // background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
  .fr-clearfix::after {
     clear: both;
     display: block;
