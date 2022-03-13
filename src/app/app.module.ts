@@ -7,6 +7,9 @@ import { HomeModule } from './modules/home/home.module';
 import { RegisterPatientsModule } from './modules/register-patients/register-patients.module';
 import { RegisterSpecialistsModule } from './modules/register-specialists/register-specialists.module';
 import { SharedModule } from './shared/shared.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { SharedModule } from './shared/shared.module';
     SharedModule,
     HomeModule,
     RegisterPatientsModule,
-    RegisterSpecialistsModule
+    RegisterSpecialistsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
