@@ -22,6 +22,12 @@
             <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
               <input type="text" name="name" placeholder="Obra social" required />
             </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+              <input type="number" name="name" placeholder="Edad" required />
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-id-card"></i></span>
+              <input type="number" name="name" placeholder="DNI" required />
+            </div>
             <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
               <input type="email" name="email" placeholder="Email" required />
             </div>
@@ -29,7 +35,7 @@
               <input type="password" name="password" placeholder="Password" required />
             </div>
             <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-              <input type="password" name="password" placeholder="Re-type Password" required />
+              <input type="password" name="password" placeholder="Confirmar Password" required />
             </div>
             
             <!-- <div class="input_field radio_option">
@@ -38,17 +44,22 @@
               <input type="radio" name="radiogroup1" id="rd2">
               <label for="rd2">Female</label>
             </div> -->
-            <div class="input_field select_option">
+            <!-- <div class="input_field select_option">
               <select>
                 <option>Select a country</option>
                 <option>Option 1</option>
                 <option>Option 2</option>
               </select>
               <div class="select_arrow"></div>
-            </div>
-            <div class="input_field"> <span><i aria-hidden="true" ></i></span>
+            </div> -->
+            <!-- <div class="input_field"> <span><i aria-hidden="true" class="fa fa-image" ></i></span>
               <input type="file" name="password" placeholder="Re-type Password" required />
+            </div> -->
+            <div class="file-select input_field"  id="src-file" ><span><i aria-hidden="true" class="fa fa-image" ></i></span>
+              <input type="file" name="src-file" aria-label="Archivo">
             </div>
+            <!-- <input id="fichero" type="file"> -->
+
             <!-- <div class="input_field checkbox_option">
               <input type="checkbox" id="cb1">
               <label for="cb1">I agree with terms and conditions</label>
